@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //java file to create a counter
+        
         Button btnplus=(Button)findViewById(R.id.btn1);
         Button btnminus=(Button)findViewById(R.id.btn2);
         TextView count=(TextView)findViewById(R.id.txtvalue);
