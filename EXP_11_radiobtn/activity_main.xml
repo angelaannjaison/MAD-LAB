@@ -13,7 +13,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
-    </RadioGroup>
 
     <RadioButton
         android:id="@+id/radioButton1"
@@ -34,4 +33,7 @@
         android:layout_marginTop="0dp"
         android:layout_marginLeft="50dp"
         android:onClick="handleradiobutton"/>
+        
+     </RadioGroup>
+    
 </LinearLayout>
