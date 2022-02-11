@@ -7,21 +7,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity 7{
+public class MainActivity extends AppCompatActivity {
+    Button btn;
+    Intent i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button btn;
-        btn=(Button) findViewById(R.id.btn);
+        btn=(Button) findViewById(R.id.btnxt);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
-                myintent=new Intent(MainActivity.this,MainActivity2.class);
-                myintent.putExtra("value1","Hello!!!");startActivity(myintent);
+            public void onClick(View view) {
+                i=new Intent(MainActivity.this,MainActivity2.class);
+                //passing the value Hello using the variavle val_1
+                i.putExtra("val_1","Hello!!!");
+                startActivity(i);
             }
         });
+
     }
 }
