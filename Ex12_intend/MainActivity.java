@@ -1,4 +1,4 @@
-package com.example.lifecycle;
+package com.example.ex12_intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
