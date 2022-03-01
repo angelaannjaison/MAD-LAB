@@ -1,40 +1,29 @@
 package com.example.exp_15;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
-public class MainActivity2 extends AppCompatActivity {
-    String s;
-    TextView t;
-    Button b1;
+public class MainActivity extends AppCompatActivity {
+    EditText e;
+    Button b2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        b1=(Button)findViewById(R.id.button);
-        t=(TextView)findViewById(R.id.textView);
-
-        b1.setOnClickListener(new View.OnClickListener() {
+        b2=(Button)findViewById(R.id.button2);
+        b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(MainActivity2.this,MainActivity.class);
-                startActivity(i);
+                Intent i2=new Intent(MainActivity.this,MainActivity2.class);
+                e=(EditText)findViewById(R.id.editText);
+                i2.putExtra("psd_val",e.getText().toString());
+                startActivity(i2);
+
             }
         });
-
-        Bundle extra=getIntent().getExtras();
-        s=extra.getString("psd_val");
-
-        if(s!=null)
-            t.setText(s);
-
-    }
-}
+    }}
