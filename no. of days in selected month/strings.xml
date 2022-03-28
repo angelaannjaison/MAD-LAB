@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">app</string>
+    <string-array name="months">
+        <item>jan</item>
+        <item>feb</item>
+        <item>march</item>
+        <item>april</item>
+        <item>may</item>
+        <item>june</item>
+        <item>july</item>
+        <item>aug</item>
+        <item>sept</item>
+        <item>oct</item>
+        <item>nov</item>
+        <item>dec</item>
+    </string-array>
+</resources>
