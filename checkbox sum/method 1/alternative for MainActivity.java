@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void ischecked(View view) {
+    public void checked(View view) {
         boolean c=((CheckBox) view).isChecked();
         CheckBox l=(CheckBox) view;
         String s=l.getText().toString();
