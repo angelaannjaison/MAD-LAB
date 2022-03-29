@@ -1,0 +1,4 @@
+To insert img :drag and drop images(here light on ,light off) to drawable folder visible at left hand side
+To access icon:rt clk on app-->new-->vector asset-->choose icon of ur choice by clking on btn corresponding to "clip art"(here ic_switched_off,ic_switched_on)
+                                                    choose colour of ur choice by clking on btn corresponding to "colour"
+                                                    
