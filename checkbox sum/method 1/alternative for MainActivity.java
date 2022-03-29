@@ -24,9 +24,8 @@ public class MainActivity extends AppCompatActivity {
         CheckBox l=(CheckBox) view;
         String s=l.getText().toString();
         int h=Integer.parseInt(s);
-                if(c) sum=sum+h;
-                else sum=sum-h;
-        }
+        if(c) sum=sum+h;
+        else sum=sum-h;
         Toast.makeText(this, sum+"", Toast.LENGTH_SHORT).show();
     }
 }
